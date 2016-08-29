@@ -1,0 +1,17 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/diceroll",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "diceroll": "./bin/diceroll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
