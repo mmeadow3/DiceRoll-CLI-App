@@ -5,7 +5,7 @@
 // var should = chai.should();
 // var assert = chai.assert;
 
-const { isFunction } = require('chai').assert
+const { isFunction, oneOf } = require('chai').assert
 
 const { randomInt } = require('../lib/math')
 describe('math', () => {
@@ -14,12 +14,9 @@ describe('math', () => {
       isFunction(randomInt)
     })
   })
-})
-
-const parseArgs = require('../lib/parse-args')
-
-describe('parse-args', () => {
-  it('should be a function', () => {
-    isFunction(parseArgs)
+  it('should return a number', () => {
+    for (let i = 0; i < 1000; i++) {
+      oneOf(randomInt(2,6), [2,3,4,5,6])
+    }
   })
 })
